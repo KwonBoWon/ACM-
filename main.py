@@ -1,11 +1,11 @@
 T= int(input())
 for i in range(T):
   H, W,N=map(int, input().split())
-  if W>=10:
-    r=N%H*100
+  #print(N%H, N//H+1)
+  if N%H==0:
+    print(H*100+N//H)
   else:
-    r=N%H*10
-  print(r+N//H+1)
+    print(N%H*100+N//H+1)
 
 
   #print(N%H,N//H+1)
